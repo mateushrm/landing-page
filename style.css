@@ -41,3 +41,52 @@ body{
 .item-menu:hover{
     text-decoration: underline;
 }
+
+.principal{
+    border-top: 0.4px solid #FFF2E7;
+    margin-bottom: 48px;
+}
+
+.ses1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.titulo{
+    font-family: 'Righteous', cursive;
+    font-weight: 400px;
+    font-size: 64px;
+    color: white;
+}
+
+.subtitulo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400px;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+.botao{
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #2F2325;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400px;
+    font-size: 24px;
+}
+
+.img-principal{
+    height: 430px;
+}
