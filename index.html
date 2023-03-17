@@ -7,14 +7,14 @@
     <title>Balle Bot - Modere a sua comunidade do Discord</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header class="cabecalho">
         <img class="img-cabecalho" src="imagens/logo1.svg" alt="logo">
         <nav class="menu">
-            <a class="item-menu" href="#">Comunidade Ballerini</a>
-            <a class="item-menu" href="#">Tutorial</a>
-            <a class="item-menu" href="#">Open Source</a>
-            <a class="item-menu" href="#">Comandos</a>
+                <a class="item-menu" href="https://discord.gg/wagxzStdcR" target="blank">Comunidade Ballerini</a>
+                <a class="item-menu" href="#">Tutorial</a>
+                <a class="item-menu" href="#">Open Source</a>
+                <a class="item-menu" href="#">Comandos</a>
         </nav>
     </header>
 
@@ -29,10 +29,10 @@
             <img class="ballebot" src="imagens/bot.svg" alt="ballebot">
         </section>
         <section class="ses2">
-            <h3 class="info">O que ela faz por você?</h3>
-            <p class="info1">1. Cria um <strong>sistema de verificação capcha</strong> para novos membros garantirem que não são robôs</p>
-            <p class="info2">2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
-            <p class="info3">3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
+            <h3 class="tit-info">O que ela faz por você?</h3>
+            <p class="info">1. Cria um <strong>sistema de verificação capcha</strong> para novos membros garantirem que não são robôs</p>
+            <p class="info">2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
+            <p class="info">3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
         </section>
     </main>
 
@@ -40,4 +40,20 @@
         <img class="img-pe" src="imagens/BALLERINI.svg" alt="ballerini">
     </footer>
 </body>
+<script>
+    function clickMenu(){
+       if(itens.style.display == 'block'){
+        itens.style.display = 'none'; 
+       } else {
+        itens.style.display = 'block'; 
+       }
+    }
+    function mudouTamanho(){
+        if(window.innerWidth >= 768){
+            itens.style.display = 'block';
+        } else {
+            itens.style.display = 'none';
+        }
+    }
+</script>
 </html>
